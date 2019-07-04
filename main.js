@@ -34,19 +34,14 @@ return listItem;
 
 function addNewTask() {
   if (newTaskInput.value) {
-    var taskListButtonDelete = document.querySelector('.tasks__list-deleteButton');
     var listItem = createNewTask(newTaskInput.value);
     taskList.appendChild(listItem);
     allTasks.appendChild(taskList);
     newTaskInput.value = '';
+    var taskListButtonDelete = document.querySelector('.tasks__list-deleteButton');
     taskListButtonDelete.addEventListener('click', deleteTask);
     
   }
-}
-
-function bindTaskEvents() {
-  console.log(taskListButtonDelete);
-  
 }
 
 function deleteTask() {
