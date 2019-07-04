@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <title>ToDoList</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="newtask">
+      <h2>🥕Добавить дело🥕</h2>
+      <div class="newtask__wrap">
+        <input class="newtask__input" type="text">
+        <button class="newtask__button">Добавить</button>
+      </div>
+    </div>
+    <div class="tasks">
+      <h2>Список дел</h2>
+      <ul class="tasks__list">
+        <!-- <li class="tasks__list-item"> 
+            <input class="tasks__list-input" type="checkbox" id="input__task">
+            <label class="tasks__list-label" for="input__task"> Сделай что-то</label>
+          <button class="tasks__list-deleteButton">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path fill="#231F20" d="M20.513 1.414L19.099 0l-8.843 8.842L1.414 0 0 1.414l8.842 8.842L0 19.098l1.414 1.414 8.842-8.842 8.843 8.842 1.414-1.414-8.842-8.842z"/></svg>       
+          </button>
+        </li> -->
+      </ul>
+    </div>
+    <div class="finished-tasks">
+      <h2>Завершенный дела</h2>
+        <ul class="finished-tasks__list">
+          <li class="finished-tasks__list-item"> 
+              <input class="finished-tasks__list-input" type="checkbox" id="input__finished-tasks" checked>
+              <label class="finished-tasks__list-label" for="input__finished-tasks"> Сделай что-то</label>
+            <button class="finished-tasks__list-deleteButton">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path fill="#231F20" d="M20.513 1.414L19.099 0l-8.843 8.842L1.414 0 0 1.414l8.842 8.842L0 19.098l1.414 1.414 8.842-8.842 8.843 8.842 1.414-1.414-8.842-8.842z"/></svg>       
+            </button>
+          </li>
+        </ul>
+      </div>
+  </div>
+  <script src ="main.js"></script>
+</body>
+</html>

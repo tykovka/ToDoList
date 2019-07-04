@@ -1,0 +1,117 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*::after {
+  box-sizing: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+body {
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 15px;
+  line-height: 26px;
+  color: #000000;
+  background-color: #f2f2f2;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+h2 {
+  font-size: 16px;
+  line-height: 26px;
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 0;
+  
+}
+
+li {
+  display: flex;
+  align-items: baseline
+}
+
+.wrapper {
+  width: 600px;
+  border: 2px solid black;
+  border-radius: 2px; 
+  margin: 100px auto 0;
+  padding: 20px;
+}
+
+.newtask {
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+
+.newtask__wrap {
+  display: flex;
+}
+
+.newtask__input {
+  width: 300px;
+  height: 25px;
+  font-size: 15px;
+}
+
+.newtask__button {
+  width: 100px;
+  height: 25px;
+  padding: 0;
+  background: none;
+  border-radius: 2px;
+  margin-left: auto;
+  margin-right: 0;
+
+}
+
+.tasks {
+  margin-top: 10px;
+}
+
+.tasks__list-input,
+.finished-tasks__list-input {
+  vertical-align: bottom;
+}
+
+.tasks__list-label {
+ margin-left: 10px;
+}
+
+.finished-tasks__list-label {
+  margin-left: 10px;
+  text-decoration: line-through;
+}
+
+.tasks__list-deleteButton,
+.finished-tasks__list-deleteButton {
+  background: none;
+  border: 0px;
+  cursor: pointer;
+  padding: 0;
+  margin-right: 2px;
+  margin-left: auto;
+}
+
+.tasks__list-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+
+
